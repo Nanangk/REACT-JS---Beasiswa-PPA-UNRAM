@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-
+import AppBar from '@material-ui/core/AppBar';
 
 class Footer extends Component {
     render() {
         return(
             <div >
-                <p>@copyright - Kelopok 6 PWL  </p>
+                <AppBar position="static" color="default">
+                <p>@Copyright 2018 - kelompok 4</p>
+          
+        </AppBar>
             </div>
         )
     }
