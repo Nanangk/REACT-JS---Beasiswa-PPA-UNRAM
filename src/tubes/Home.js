@@ -121,7 +121,7 @@ class Home extends Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              Mahasiswa
+              PPA
             </Typography>
           </Toolbar>
         </AppBar>
