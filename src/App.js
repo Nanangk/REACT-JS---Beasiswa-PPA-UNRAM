@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import Header from './PPA/header';
+import Jmtron from './PPA/jmtron';
+import style from './asset/css/style.css';
 
-import './App.css';
-import Header from './tubes/Header';
-import Home from './tubes/Home';
-import Footer from './tubes/Footer';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <Home/>
-        <Footer/>
+      <div className={style.all}>
+         <Header/>
+         <Jmtron/>
+        
       </div>
     );
   }
