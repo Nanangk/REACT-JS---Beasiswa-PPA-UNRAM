@@ -146,7 +146,7 @@ class Home extends Component {
           </div>
           <Divider />
           <List>
-            {['Dashboard', 'KRS', 'Ekonomi', 'Pernyataan'].map((text, index) => (
+            {['Dashboard', 'Pendaftaran', 'Pengumaman', 'Logout'].map((text, index) => (
               <ListItem button key={text}>
                 
                 <ListItemText primary={text} />
