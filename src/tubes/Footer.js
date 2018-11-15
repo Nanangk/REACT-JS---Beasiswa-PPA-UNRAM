@@ -6,7 +6,7 @@ class Footer extends Component {
         return(
             <div >
                 <AppBar position="static" color="default">
-                <p>@Copyright 2018 - kelompok 4</p>
+                <p>@Copyright 2018 - Kelompok 4</p>
           
         </AppBar>
             </div>
