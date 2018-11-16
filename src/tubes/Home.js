@@ -15,8 +15,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-
 import ListItemText from '@material-ui/core/ListItemText';
+import TextField from '@material-ui/core/TextField';
 
 
 
@@ -87,6 +87,15 @@ const styles = theme => ({
 class Home extends Component {
   state = {
     open: false,
+    name: 'Mega',
+    ptn: 'Universitas Mataram',
+    nim: '',
+    prodi: '',
+    alamat: '',
+    semester: '',
+    angkatan: '',
+    jk: '',
+
   };
 
   handleDrawerOpen = () => {
@@ -97,6 +106,13 @@ class Home extends Component {
     this.setState({ open: false });
   };
 
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
+
+  
   render() {
     const { classes, theme } = this.props;
 
@@ -158,14 +174,104 @@ class Home extends Component {
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Typography paragraph>
-            SOON TABEL MAHASISWA
+          
+          <form>
+            <TextField
+            id="filled-ptn"
+            label="Perguruan Tinggi"
+            className={classes.textField}
+            value={this.state.ptn}
+            onChange={this.handleChange('ptn')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+             <TextField
+            id="filled-name"
+            label="Name"
+            className={classes.textField}
+            value={this.state.name}
+            onChange={this.handleChange('name')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+            <TextField
+            id="filled-nim"
+            label="NIM"
+            className={classes.textField}
+            value={this.state.NIM}
+            onChange={this.handleChange('NIM')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+            <TextField
+            id="filled-prodi"
+            label="Prodi"
+            className={classes.textField}
+            value={this.state.prodi}
+            onChange={this.handleChange('prodi')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
             
-          </Typography>
-          <Typography paragraph>
-            SOON TABEL MAHASISWA
+
+            <TextField
+            id="filled-alamat"
+            label="Alamat"
+            className={classes.textField}
+            value={this.state.prodi}
+            onChange={this.handleChange('alamat')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+             <TextField
+            id="filled-semester"
+            label="Semester"
+            className={classes.textField}
+            value={this.state.prodi}
+            onChange={this.handleChange('semester')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+             <TextField
+            id="filled-angkatan"
+            label="Angkatan"
+            className={classes.textField}
+            value={this.state.prodi}
+            onChange={this.handleChange('angkatan')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+             <TextField
+            id="filled-jk"
+            label="Jenis Kelamin"
+            className={classes.textField}
+            value={this.state.prodi}
+            onChange={this.handleChange('jk')}
+            margin="normal"
+            variant="filled"
+            style={{ margin: 16 }}
+            />
+
+
+
+
+
+
             
-          </Typography>
+          </form>
           
         </main>
       </div>
