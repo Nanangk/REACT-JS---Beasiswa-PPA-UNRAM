@@ -17,6 +17,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 
 
@@ -176,100 +177,122 @@ class Home extends Component {
           <div className={classes.toolbar} />
           
           <form>
-            <TextField
-            id="filled-ptn"
-            label="Perguruan Tinggi"
-            className={classes.textField}
-            value={this.state.ptn}
-            onChange={this.handleChange('ptn')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
+            <center><table>
+              <tr>
+                <td>
+                <TextField
+                  id="filled-ptn"
+                  label="Perguruan Tinggi"
+                  className={classes.textField}
+                  value={this.state.ptn}
+                  onChange={this.handleChange('ptn')}
+                  margin="normal"
+                  variant="filled"
+                  style={{ margin: 16 }}
+                />
+                </td>
+                <td>
+                <TextField
+                  id="filled-name"
+                  label="Name"
+                  className={classes.textField}
+                  value={this.state.name}
+                  onChange={this.handleChange('name')}
+                  margin="normal"
+                  variant="filled"
+                  style={{ margin: 16 }}
+                  />
+                </td>
+                 <TextField
+                  id="filled-nim"
+                  label="NIM"
+                  className={classes.textField}
+                  value={this.state.NIM}
+                  onChange={this.handleChange('NIM')}
+                  margin="normal"
+                  variant="filled"
+                  style={{ margin: 16 }}
+                  />
+              </tr>
 
-             <TextField
-            id="filled-name"
-            label="Name"
-            className={classes.textField}
-            value={this.state.name}
-            onChange={this.handleChange('name')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
+              <tr>
+                <td>
+                  <TextField
+                    id="filled-prodi"
+                    label="Prodi"
+                    className={classes.textField}
+                    value={this.state.prodi}
+                    onChange={this.handleChange('prodi')}
+                    margin="normal"
+                    variant="filled"
+                    style={{ margin: 16 }}
+                    />
+                </td>
 
-            <TextField
-            id="filled-nim"
-            label="NIM"
-            className={classes.textField}
-            value={this.state.NIM}
-            onChange={this.handleChange('NIM')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
+                <td>
+                  <TextField
+                    id="filled-alamat"
+                    label="Alamat"
+                    className={classes.textField}
+                    value={this.state.prodi}
+                    onChange={this.handleChange('alamat')}
+                    margin="normal"
+                    variant="filled"
+                    style={{ margin: 16 }}
+                    />
+                </td>
 
-            <TextField
-            id="filled-prodi"
-            label="Prodi"
-            className={classes.textField}
-            value={this.state.prodi}
-            onChange={this.handleChange('prodi')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
-            
+                <td>
+                  <TextField
+                    id="filled-semester"
+                    label="Semester"
+                    className={classes.textField}
+                    value={this.state.prodi}
+                    onChange={this.handleChange('semester')}
+                    margin="normal"
+                    variant="filled"
+                    style={{ margin: 16 }}
+                  />
+                </td>
+              </tr>
 
-            <TextField
-            id="filled-alamat"
-            label="Alamat"
-            className={classes.textField}
-            value={this.state.prodi}
-            onChange={this.handleChange('alamat')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
+              <tr>
+                <td>
+                <TextField
+                  id="filled-angkatan"
+                  label="Angkatan"
+                  className={classes.textField}
+                  value={this.state.prodi}
+                  onChange={this.handleChange('angkatan')}
+                  margin="normal"
+                  variant="filled"
+                  style={{ margin: 16 }}
+                  />
+                </td>
+                
+                <td>
+                <TextField
+                  id="filled-jk"
+                  label="Jenis Kelamin"
+                  className={classes.textField}
+                  value={this.state.prodi}
+                  onChange={this.handleChange('jk')}
+                  margin="normal"
+                  variant="filled"
+                  style={{ margin: 16 }}
+                  />
+                </td>
 
-             <TextField
-            id="filled-semester"
-            label="Semester"
-            className={classes.textField}
-            value={this.state.prodi}
-            onChange={this.handleChange('semester')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
-
-             <TextField
-            id="filled-angkatan"
-            label="Angkatan"
-            className={classes.textField}
-            value={this.state.prodi}
-            onChange={this.handleChange('angkatan')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
-
-             <TextField
-            id="filled-jk"
-            label="Jenis Kelamin"
-            className={classes.textField}
-            value={this.state.prodi}
-            onChange={this.handleChange('jk')}
-            margin="normal"
-            variant="filled"
-            style={{ margin: 16 }}
-            />
-
-
-
-
-
-
+                <td>
+                <Button variant="contained" 
+                className={classes.button} 
+                
+                margin="normal"
+                
+                style={{ margin: 16 }}>Ubah Password</Button>
+                </td>
+              </tr>
+            </table> </center>
             
           </form>
           
