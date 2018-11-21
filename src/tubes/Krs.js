@@ -86,11 +86,20 @@ const styles = theme => ({
 });
 
 class Krs extends Component {
+ 
   state = {
     open: true,
 
   };
 
+  const rows = [
+    createData('Nama', mega),
+    createData('nim', ),
+    createData('Tahun', ),
+    createData('semester', ),
+    createData('Tahun akademin', ),
+  ];
+  
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
   };
