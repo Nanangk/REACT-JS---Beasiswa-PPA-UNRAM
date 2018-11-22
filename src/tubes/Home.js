@@ -85,11 +85,15 @@ const styles = theme => ({
   },
 });
 
+let style = {
+  width : "30em"
+}
+
 class Home extends Component {
   state = {
     open: false,
-    name: 'Mega',
-    ptn: 'Universitas Mataram',
+    name: '',
+    ptn: '',
     nim: '',
     prodi: '',
     alamat: '',
@@ -175,11 +179,10 @@ class Home extends Component {
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
+          <h1>FORMULIR PENDAFTARAN</h1>
           
           <form>
-            <center><table>
-              <tr>
-                <td>
+            <div>
                 <TextField
                   id="filled-ptn"
                   label="Perguruan Tinggi"
@@ -188,10 +191,11 @@ class Home extends Component {
                   onChange={this.handleChange('ptn')}
                   margin="normal"
                   variant="filled"
-                  style={{ margin: 16 }}
+                  style={style}
                 />
-                </td>
-                <td>
+              </div>
+                
+              <div>
                 <TextField
                   id="filled-name"
                   label="Name"
@@ -200,9 +204,10 @@ class Home extends Component {
                   onChange={this.handleChange('name')}
                   margin="normal"
                   variant="filled"
-                  style={{ margin: 16 }}
+                  style={style}
                   />
-                </td>
+              </div>
+              <div>
                  <TextField
                   id="filled-nim"
                   label="NIM"
@@ -211,12 +216,11 @@ class Home extends Component {
                   onChange={this.handleChange('NIM')}
                   margin="normal"
                   variant="filled"
-                  style={{ margin: 16 }}
+                  style={style}
                   />
-              </tr>
-
-              <tr>
-                <td>
+              </div>
+              
+              <div>
                   <TextField
                     id="filled-prodi"
                     label="Prodi"
@@ -225,77 +229,58 @@ class Home extends Component {
                     onChange={this.handleChange('prodi')}
                     margin="normal"
                     variant="filled"
-                    style={{ margin: 16 }}
+                    style={style}
                     />
-                </td>
-
-                <td>
+               </div>
+              <div>
                   <TextField
                     id="filled-alamat"
                     label="Alamat"
                     className={classes.textField}
-                    value={this.state.prodi}
+                    value={this.state.alamat}
                     onChange={this.handleChange('alamat')}
                     margin="normal"
                     variant="filled"
-                    style={{ margin: 16 }}
+                    style={style}
                     />
-                </td>
-
-                <td>
+               </div>
+               <div>
                   <TextField
                     id="filled-semester"
                     label="Semester"
                     className={classes.textField}
-                    value={this.state.prodi}
+                    value={this.state.semester}
                     onChange={this.handleChange('semester')}
                     margin="normal"
                     variant="filled"
-                    style={{ margin: 16 }}
+                    style={style}
                   />
-                </td>
-              </tr>
-
-              <tr>
-                <td>
+             </div>
+             <div>
                 <TextField
                   id="filled-angkatan"
                   label="Angkatan"
                   className={classes.textField}
-                  value={this.state.prodi}
+                  value={this.state.angkatan}
                   onChange={this.handleChange('angkatan')}
                   margin="normal"
                   variant="filled"
-                  style={{ margin: 16 }}
+                  style={style}
                   />
-                </td>
-                
-                <td>
+              </div>
+              <div>
                 <TextField
                   id="filled-jk"
                   label="Jenis Kelamin"
                   className={classes.textField}
-                  value={this.state.prodi}
+                  value={this.state.jk}
                   onChange={this.handleChange('jk')}
                   margin="normal"
                   variant="filled"
-                  style={{ margin: 16 }}
+                  style={style}
                   />
-                </td>
-
-                <td>
-                <Button variant="contained" 
-                className={classes.button} 
-                
-                margin="normal"
-                
-                style={{ margin: 16 }}>Ubah Password</Button>
-                </td>
-              </tr>
-            </table> </center>
-            
+                </div>   
           </form>
-          
         </main>
       </div>
     );

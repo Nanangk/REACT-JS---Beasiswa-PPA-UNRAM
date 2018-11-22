@@ -92,7 +92,7 @@ class Krs extends Component {
 
   };
 
-  const rows = [
+  const rows : [
     createData('Nama', mega),
     createData('nim', ),
     createData('Tahun', ),

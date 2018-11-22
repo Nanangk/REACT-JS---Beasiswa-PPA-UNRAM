@@ -188,7 +188,7 @@ class Pernyataan extends Component {
               </tr>
             </table>
             </center>
-            <Button variant="contained" color="primary" className={classes.button}> Setuju</Button>
+            <Button variant="contained" color="primary" className={classes.button}> Selanjutnya</Button>
           
         </main>
          </div>
