@@ -16,7 +16,7 @@ class App extends Component {
         <Home/>
         <Pernyataan/>
         <Footer/> */}
-        <Login></Login>
+        <Home></Home>
       </div>
     );
   }
