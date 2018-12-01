@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Pernyataan from './components/Pernyataan';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import Sidebar from './components/Sidebar'
 
 
 class App extends Component {
@@ -16,7 +17,9 @@ class App extends Component {
         <Home/>
         <Pernyataan/>
         <Footer/> */}
-        <Login></Login>
+
+        {/* <Login></Login> */}
+        <Sidebar/>
       </div>
     );
   }
