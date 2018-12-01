@@ -46,6 +46,9 @@ class Login extends Component {
                 <Button variant="contained" color="primary">
                  Login
                 </Button>
+                <div className="lupa">
+                  <a href="">Lupa password?</a>
+                </div>
             </div>
           </div>
       </div>

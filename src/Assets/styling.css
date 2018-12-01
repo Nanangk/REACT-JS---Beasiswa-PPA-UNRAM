@@ -5,9 +5,18 @@ h2{
     margin-top: 130px;
     margin-bottom: 0px;
     text-align: center;
+    color: white;
 }
 .logo{
     position: absolute;
     top :0.5em;
     left:320px;
+}
+.lupa > a{
+    color:darkblue;
+    font-weight: 500;
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
 }
