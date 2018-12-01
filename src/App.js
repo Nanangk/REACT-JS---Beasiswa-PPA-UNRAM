@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Pernyataan from './components/Pernyataan';
 import Footer from './components/Footer';
 import Login from './components/Login';
-import UserIndex from './components/UserIndex';
+<<<<<<< HEAD
 
 
 class App extends Component {
@@ -19,6 +19,11 @@ class App extends Component {
         <Footer/> */}
         {/* <Login></Login> */}
         <UserIndex></UserIndex>
+=======
+
+        {/* <Login></Login> */}
+        <Sidebar/>
+>>>>>>> 2bc4ed114fb00542007873d8d352e1569f724755
       </div>
     );
   }
