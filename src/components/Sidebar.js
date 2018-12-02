@@ -16,7 +16,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-// import Login from './Login';
+import '../Assets/styling.css';
+import UNRAM from '../Assets/logo2.png';
+import FormDaftar from './FormDaftar';
 
 const drawerWidth = 240;
 
@@ -66,8 +68,9 @@ class Sidebar extends React.Component {
 
     const drawer = (
       <div>
+        <img className='logoUnram' src={UNRAM}/>
+        <div className='judul'>Beasiswa PPA</div>
         <div className={classes.toolbar} />
-        
         <Divider />
         <List>
           {['Profil', 'Daftar', 'Pengumuman'].map((text, index) => (
@@ -98,6 +101,7 @@ class Sidebar extends React.Component {
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>
+            
             <IconButton
               color="primary"
               aria-label="Open drawer"
@@ -144,7 +148,7 @@ class Sidebar extends React.Component {
         </nav>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          {/* <Login/> */}
+          <FormDaftar/>
         </main>
       </div>
     );
