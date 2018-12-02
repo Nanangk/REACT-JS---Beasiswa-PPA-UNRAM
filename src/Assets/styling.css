@@ -42,12 +42,13 @@ table{
 }
 
 td:nth-child(odd){
-    width: 20%;
+    width: 50%;
     font-weight: bold;
+   
 }
 
 td:nth-child(even){
-    width: 80%;
+    width: 40%;
 }
 
 td{
@@ -58,6 +59,11 @@ td{
     margin-right: 0.5em;
 }
 
-/* .uploadb{
-    margin-left: 2em;
-} */
+.uploadb{
+    margin-top: 2em;
+}
+.foto{
+    height: 345px;
+    border : 1px solid black;
+    margin-left: 30%
+}
