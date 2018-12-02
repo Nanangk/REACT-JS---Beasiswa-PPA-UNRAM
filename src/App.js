@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Sidebar from './components/Sidebar';
 import Profile from './components/Profile';
+import FormDaftar from './components/FormDaftar';
 
 
 
@@ -18,9 +19,9 @@ class App extends Component {
       <div className="App">
         {/* <Header/>
         <Home/>
-        <Pernyataan/>
+        <Profile/>
         <Footer/> */}
-        <Profile></Profile>
+        <Sidebar></Sidebar>
       </div>
     );
   }

@@ -19,6 +19,7 @@ import { withStyles } from '@material-ui/core/styles';
 import '../Assets/styling.css';
 import UNRAM from '../Assets/logo2.png';
 import FormDaftar from './FormDaftar';
+import Profile from './Profile';
 
 const drawerWidth = 240;
 
@@ -73,7 +74,7 @@ class Sidebar extends React.Component {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['Profil', 'Daftar', 'Pengumuman'].map((text, index) => (
+          {['Profile', 'Daftar', 'Pengumuman'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
@@ -111,7 +112,7 @@ class Sidebar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              
+              Profile Mahasiswa
             </Typography>
           </Toolbar>
         </AppBar>
@@ -148,7 +149,7 @@ class Sidebar extends React.Component {
         </nav>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <FormDaftar/>
+          <Profile/>
         </main>
       </div>
     );
