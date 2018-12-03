@@ -35,25 +35,25 @@ class UploadFile extends React.Component{
               </Typography>
                 <div className="uploadb">
                     <Button variant="contained" color="secondary">
-                        <div className="upload">Upload 1</div>
+                        <div className="upload">Upload File 1</div>
                         <CloudUploadIcon />
                     </Button>
                 </div>
                 <div className="uploadb">
                     <Button variant="contained" color="secondary">
-                        <div className="upload">Upload 2</div>
+                        <div className="upload">Upload File 2</div>
                         <CloudUploadIcon />
                     </Button>
                 </div>
                 <div className="uploadb">
                     <Button variant="contained" color="secondary">
-                        <div className="upload">Upload 3</div>
+                        <div className="upload">Upload File 3</div>
                         <CloudUploadIcon />
                     </Button>
                 </div>
                 <div className="uploadb">
                     <Button variant="contained" color="secondary">
-                        <div className="upload">Upload 4</div>
+                        <div className="upload">Upload File 4</div>
                         <CloudUploadIcon />
                     </Button>
                 </div>  

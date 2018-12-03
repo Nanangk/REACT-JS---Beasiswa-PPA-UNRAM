@@ -27,6 +27,12 @@ class FormDaftar extends React.Component{
                                 </td>
                             </tr>
                             <tr>
+                                <td>Fakultas/Jurusan</td>
+                                <td>
+                                <Input value="Teknik/Teknik Informatika" style={{width: 300}}/>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td>Tanggal Lahir</td>
                                 <td>
                                     <Input value="28 Februari 1997" style={{width: 300}}/>

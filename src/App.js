@@ -7,16 +7,13 @@ import Pernyataan from './components/Pernyataan';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Sidebar from './components/Sidebar';
+import Pengumuman from './components/Pengumuman';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Header/>
-        <Home/>
-        <Profile/>
-        <Footer/> */}
         <Sidebar></Sidebar>
       </div>
     );
