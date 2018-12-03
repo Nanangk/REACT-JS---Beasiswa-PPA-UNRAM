@@ -17,6 +17,29 @@ import Pengumuman from './Pengumuman';
 import {BrowserRouter, Route} from 'react-router-dom';
 import SideBarNav from './SideBarNav';
 
+
+const titleProfile = () => {
+  return(
+    <div>
+      Profile
+    </div>
+  )
+}
+const titleDaftar = () => {
+  return(
+    <div>
+      Daftar
+    </div>
+  )
+}
+const titlePengumuman = () => {
+  return(
+    <div>
+      Pengumuman
+    </div>
+  )
+}
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -86,7 +109,11 @@ class Sidebar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              Profile Mahasiswa
+              <div>
+                <Route path = "/" component = {titleProfile} exact/>
+                <Route path = "/daftar" component = {titleDaftar}/>
+                <Route path = "/pengumuman" component = {titlePengumuman}/>
+              </div>
             </Typography>
           </Toolbar>
         </AppBar>
