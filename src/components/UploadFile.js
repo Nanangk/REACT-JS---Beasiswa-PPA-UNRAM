@@ -16,7 +16,7 @@ class UploadFile extends React.Component{
         return (
             <div>
     
-                <Button variant="contained" color="default" className="uploadb">
+                <Button variant="contained" color="default" className="uploadb" >
                     <div className="upload">Upload</div>
                     <CloudUploadIcon />
                 </Button>
