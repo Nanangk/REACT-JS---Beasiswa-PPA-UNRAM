@@ -29,9 +29,6 @@ class UploadFile extends React.Component{
                     <div>
                         3. Slip Gaji Orang Tua
                     </div> 
-                    <div>
-                        4. Keterangan Tidak Menerima Beasiswa
-                    </div>
               </Typography>
                 <div className="uploadb">
                     <Button variant="contained" color="secondary">
@@ -51,12 +48,6 @@ class UploadFile extends React.Component{
                         <CloudUploadIcon />
                     </Button>
                 </div>
-                <div className="uploadb">
-                    <Button variant="contained" color="secondary">
-                        <div className="upload">Upload File 4</div>
-                        <CloudUploadIcon />
-                    </Button>
-                </div>  
             </div>
         )
     }

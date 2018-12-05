@@ -8,6 +8,7 @@ import Foto from '../Assets/DSC_1026.jpg';
 import Divider from '@material-ui/core/Divider';
 
 
+
 class Profile extends React.Component{
     render(){
         return (
@@ -46,21 +47,15 @@ class Profile extends React.Component{
                            </td>
                        </tr>
                        <tr>
-                           <td>Golongan Darah</td>
+                           <td>No. Hp</td>
                            <td>
-                               <Input value="A" style={{width: 300}}/>
+                               <Input value="087863593921" style={{width: 300}}/>
                            </td>
                        </tr>
                        <tr>
-                           <td>NIK</td>
+                           <td>Email</td>
                            <td>
-                               <Input value="12901927492183138" style={{width: 300}}/>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>Agama</td>
-                           <td>
-                               <Input value="Islam" style={{width: 300}}/>
+                               <Input value="patriajimaulana@gmail.com" style={{width: 300}}/>
                            </td>
                        </tr>
                    </td>
