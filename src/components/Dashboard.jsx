@@ -7,6 +7,17 @@ class Dashboard extends Component {
         return(
             <div>
                 hello
+                <form>
+                    <table>
+                        <tr>
+                            <td>Unername</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         )
     }
