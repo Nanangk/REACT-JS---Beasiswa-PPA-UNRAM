@@ -12,12 +12,12 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import cookie from 'react-cookies';
 
 const button = {
-  profile : 'Profile',
-  daftar : 'Daftar',
-  Pengumuman : 'pengumuman',
-}
+    dashboard : 'Dashbord',
+    pendaftar : 'Data Pendaftar',
+    pendaftarverif : 'Pendaftar Diterima',
+  }
 
-class SideBarNav extends Component {
+class SideBarNavAdmin extends Component {
   constructor(props){
     super(props);
     this.state ={
@@ -37,32 +37,32 @@ logout(){
       <div>
         <div>
           <Divider/>
-            <div className="mhs" >MAHASISWA</div>
+            <div className="mhs" >ADMIN</div>
           <Divider />
             <List> 
-              <NavLink className='navMenu' to='/home'>
-                <ListItem button key={button.profile}>
-                <MailIcon/><span style={{marginLeft : '2em'}}>Profile</span>
+              <NavLink className='navMenu' to='/dashboard'>
+                <ListItem button key={button.dashboard}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Dashboard</span>
                 </ListItem>
               </NavLink>  
-              <NavLink className='navMenu' to='/daftar'>
-                <ListItem button key={button.daftar}>
-                <MailIcon/><span style={{marginLeft : '2em'}}>Daftar</span>
+              <NavLink className='navMenu' to='/pendaftar'>
+                <ListItem button key={button.pendaftar}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Data Pendaftar</span>
                 </ListItem>
               </NavLink> 
-              <NavLink className='navMenu' to='/pengumuman'>
-                <ListItem button key={button.pengumuman}>
-                <MailIcon/><span style={{marginLeft : '2em'}}>Pengumuman</span>
+              <NavLink className='navMenu' to='/Pendaftarverif'>
+                <ListItem button key={button.pendaftarverif}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Pendaftar Diterima</span>
                 </ListItem>
               </NavLink> 
             </List>
         </div>
-       
+      
         <Divider  />
         {/* LogoutNav */}
         <Divider />
         <List>
-           <NavLink className='navMenu' to='/'>
+           <NavLink className='navMenu' to='/pengumuman'>
               <ListItem button key={button.profile} onClick={this.logout}>
               <MailIcon/><span style={{marginLeft : '2em'}}>Log Out</span>
               </ListItem>
@@ -75,4 +75,4 @@ logout(){
   }
 }
 
-export default SideBarNav;
+export default SideBarNavAdmin;

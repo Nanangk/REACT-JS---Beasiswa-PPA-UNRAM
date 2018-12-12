@@ -17,28 +17,28 @@ import FormDaftar from './FormDaftar';
 import Profile from './Profile';
 import Pengumuman from './Pengumuman';
 import {BrowserRouter, Route} from 'react-router-dom';
-import SideBarNav from './SideBarNav';
+import SideBarNavAdmin from './SideBarNavAdmin';
 import Dashboard from './Dashboard';
 
 
-const titleProfile = () => {
+const titleDashboard = () => {
   return(
     <div>
-      Profile
+      Dashboard
     </div>
   )
 }
-const titleDaftar = () => {
+const titlePendaftar = () => {
   return(
     <div>
-      Daftar
+      Data Pendaftar
     </div>
   )
 }
-const titlePengumuman = () => {
+const titlePendaftarVerif = () => {
   return(
     <div>
-      Pengumuman
+    Pendaftar Diterima
     </div>
   )
 }
@@ -77,7 +77,7 @@ const styles = theme => ({
   },
 });
 
-class Sidebar extends React.Component {
+class SidebarAdmin extends React.Component {
   componentWillMount(){
     if(cookie.load('access') === undefined){
         window.location = "/";
@@ -100,7 +100,7 @@ class Sidebar extends React.Component {
         <img className='logoUnram' src={UNRAM}/>
         <div className='judul'>Beasiswa PPA</div>
         <div className={classes.toolbar} />
-        <SideBarNav/>
+        <SideBarNavAdmin/>
       </div>
     );
 
@@ -119,9 +119,9 @@ class Sidebar extends React.Component {
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
               <div>
-                <Route path = "/home" component = {titleProfile} exact/>
-                <Route path = "/daftar" component = {titleDaftar}/>
-                <Route path = "/pengumuman" component = {titlePengumuman}/>
+                <Route path = "/dashboard" component = {titleDashboard} exact/>
+                <Route path = "/pendaftar" component = {titlePendaftar}/>
+                <Route path = "/pendaftarverif" component = {titlePendaftarVerif}/>
               </div>
             </Typography>
           </Toolbar>
@@ -160,9 +160,9 @@ class Sidebar extends React.Component {
         <main className={classes.content}>
           <div className={classes.toolbar} />
               <div>
-                <Route path = "/home" component = {Profile}  exact/>
-                <Route path = "/daftar" component = {FormDaftar}/>
-                <Route path = "/Pengumuman" component = {Pengumuman}/>
+                <Route path = "/dashboard" component = {Dashboard}  exact/>
+                <Route path = "/pendaftar" component = {Dashboard}/>
+                <Route path = "/pebdaftarverif" component = {Dashboard}/>
               </div>
         </main>
       </div>
@@ -170,7 +170,7 @@ class Sidebar extends React.Component {
   }
 }
 
-Sidebar.propTypes = {
+SidebarAdmin.propTypes = {
   classes: PropTypes.object.isRequired,
   // Injected by the documentation to work in an iframe.
   // You won't need it on your project.
@@ -178,4 +178,4 @@ Sidebar.propTypes = {
   theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(Sidebar);
+export default withStyles(styles, { withTheme: true })(SidebarAdmin);
