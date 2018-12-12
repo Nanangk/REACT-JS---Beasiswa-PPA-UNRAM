@@ -40,6 +40,13 @@ const titlePengumuman = () => {
     </div>
   )
 }
+const titleDashboard = () => {
+  return(
+    <div>
+      Dashboard
+    </div>
+  )
+}
 
 const drawerWidth = 240;
 
@@ -114,6 +121,7 @@ class Sidebar extends React.Component {
                 <Route path = "/" component = {titleProfile} exact/>
                 <Route path = "/daftar" component = {titleDaftar}/>
                 <Route path = "/pengumuman" component = {titlePengumuman}/>
+                <Route path = "/dashboard" component = {titleDashboard}/>
               </div>
             </Typography>
           </Toolbar>
@@ -151,12 +159,16 @@ class Sidebar extends React.Component {
         </nav>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-              <div>
+              {/* <div>
                 <Route path = "/" component = {Profile}  exact/>
                 <Route path = "/daftar" component = {FormDaftar}/>
                 <Route path = "/Pengumuman" component = {Pengumuman}/>
+              </div> */}
+              <div>
+                <Route path = "/dashboard" component = {Dashboard}  exact/>
+                <Route path = "/daftar" component = {FormDaftar}/>
+                <Route path = "/Pengumuman" component = {Pengumuman}/>
               </div>
-              {/* <Dashboard></Dashboard> */}
         </main>
       </div>
     );

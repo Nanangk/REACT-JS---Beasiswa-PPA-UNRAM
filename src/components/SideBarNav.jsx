@@ -20,43 +20,50 @@ class SideBarNav extends Component {
   render() {
     return (
       <div>
-        <Divider/>
-          <div className="mhs" >MAHASISWA</div>
-        <Divider />
-          <List> 
-            <NavLink className='navMenu' to='/'>
-              <ListItem button key={button.profile}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Profile</span>
-              </ListItem>
-            </NavLink>  
-            <NavLink className='navMenu' to='/daftar'>
-              <ListItem button key={button.daftar}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Daftar</span>
-              </ListItem>
-            </NavLink> 
-            <NavLink className='navMenu' to='/pengumuman'>
-              <ListItem button key={button.pengumuman}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Pengumuman</span>
-              </ListItem>
-            </NavLink> 
-          </List>
-          {/* <List> 
-            <NavLink className='navMenu' to='/1'>
-              <ListItem button key={button.profile}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Dashboard</span>
-              </ListItem>
-            </NavLink>  
-            <NavLink className='navMenu' to='/2'>
-              <ListItem button key={button.daftar}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Data Pendaftar</span>
-              </ListItem>
-            </NavLink> 
-            <NavLink className='navMenu' to='/3'>
-              <ListItem button key={button.pengumuman}>
-              <MailIcon/><span style={{marginLeft : '2em'}}>Pendaftar Terverisikasi</span>
-              </ListItem>
-            </NavLink> 
-          </List> */}
+        {/* <div>
+          <Divider/>
+            <div className="mhs" >MAHASISWA</div>
+          <Divider />
+            <List> 
+              <NavLink className='navMenu' to='/'>
+                <ListItem button key={button.profile}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Profile</span>
+                </ListItem>
+              </NavLink>  
+              <NavLink className='navMenu' to='/daftar'>
+                <ListItem button key={button.daftar}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Daftar</span>
+                </ListItem>
+              </NavLink> 
+              <NavLink className='navMenu' to='/pengumuman'>
+                <ListItem button key={button.pengumuman}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Pengumuman</span>
+                </ListItem>
+              </NavLink> 
+            </List>
+        </div> */}
+        <div>
+          <Divider/>
+            <div className="mhs" >ADMIN</div>
+          <Divider />
+            <List> 
+              <NavLink className='navMenu' to='/dashboard'>
+                <ListItem button key={button.profile}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Dashboard</span>
+                </ListItem>
+              </NavLink>  
+              <NavLink className='navMenu' to='/daftar'>
+                <ListItem button key={button.daftar}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Data Pendaftar</span>
+                </ListItem>
+              </NavLink> 
+              <NavLink className='navMenu' to='/pengumuman'>
+                <ListItem button key={button.pengumuman}>
+                <MailIcon/><span style={{marginLeft : '2em'}}>Pendaftar Yang Diterima</span>
+                </ListItem>
+              </NavLink> 
+            </List>
+        </div>
         <Divider  />
         {/* LogoutNav */}
         <Divider />
