@@ -9,11 +9,13 @@ import KeyboardVoiceICon from '@material-ui/icons/KeyboardVoice';
 import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
 import '../Assets/styling.css';
+import Typography from '@material-ui/core/Typography';
 
 
 class UploadFile extends React.Component{
     render(){
         return (
+<<<<<<< HEAD
             <div>
     
                 <Button variant="contained" color="default" className="uploadb" >
@@ -36,6 +38,50 @@ class UploadFile extends React.Component{
                     <CloudUploadIcon />
                 </Button>
                 
+=======
+            <div>   
+               <Typography variant="h6" color="inherit" noWrap>
+                    Upload Kelengkapan Berkas :
+              </Typography>
+              <Typography variant="h7" color="inherit" noWrap>
+                    <div>
+                        1. Keterangan Tidak Menerima Beasiswa
+                    </div> 
+                    <div>
+                        2. Keterangan Aktif Kuliah
+                    </div> 
+                    <div>
+                        3. Slip Gaji Orang Tua
+                    </div> 
+                    <div>
+                        4. Keterangan Tidak Menerima Beasiswa
+                    </div>
+              </Typography>
+                <div className="uploadb">
+                    <Button variant="contained" color="secondary">
+                        <div className="upload">Upload File 1</div>
+                        <CloudUploadIcon />
+                    </Button>
+                </div>
+                <div className="uploadb">
+                    <Button variant="contained" color="secondary">
+                        <div className="upload">Upload File 2</div>
+                        <CloudUploadIcon />
+                    </Button>
+                </div>
+                <div className="uploadb">
+                    <Button variant="contained" color="secondary">
+                        <div className="upload">Upload File 3</div>
+                        <CloudUploadIcon />
+                    </Button>
+                </div>
+                <div className="uploadb">
+                    <Button variant="contained" color="secondary">
+                        <div className="upload">Upload File 4</div>
+                        <CloudUploadIcon />
+                    </Button>
+                </div>  
+>>>>>>> 37cbc0e9c9e1561008a3e9d3fb32821e7deb574e
             </div>
         )
     }

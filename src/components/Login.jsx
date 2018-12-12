@@ -43,7 +43,7 @@ class Login extends Component {
                 variant="filled"
                 />
                 <br></br>
-                <Button variant="contained" color="primary">
+                <Button variant="contained" color="secondary">
                  Login
                 </Button>
                 <div className="lupa">

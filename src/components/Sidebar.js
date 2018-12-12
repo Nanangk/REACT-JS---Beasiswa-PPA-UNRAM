@@ -2,16 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -19,6 +12,33 @@ import { withStyles } from '@material-ui/core/styles';
 import '../Assets/styling.css';
 import UNRAM from '../Assets/logo2.png';
 import FormDaftar from './FormDaftar';
+import Profile from './Profile';
+import Pengumuman from './Pengumuman';
+import {BrowserRouter, Route} from 'react-router-dom';
+import SideBarNav from './SideBarNav';
+
+
+const titleProfile = () => {
+  return(
+    <div>
+      Profile
+    </div>
+  )
+}
+const titleDaftar = () => {
+  return(
+    <div>
+      Daftar
+    </div>
+  )
+}
+const titlePengumuman = () => {
+  return(
+    <div>
+      Pengumuman
+    </div>
+  )
+}
 
 const drawerWidth = 240;
 
@@ -71,28 +91,7 @@ class Sidebar extends React.Component {
         <img className='logoUnram' src={UNRAM}/>
         <div className='judul'>Beasiswa PPA</div>
         <div className={classes.toolbar} />
-        <Divider />
-        <List>
-          {['Profil', 'Daftar', 'Pengumuman'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-
-        <Divider />
-        <List>
-          {['Logout'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-       
+        <SideBarNav/>
       </div>
     );
 
@@ -101,7 +100,6 @@ class Sidebar extends React.Component {
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>
-            
             <IconButton
               color="primary"
               aria-label="Open drawer"
@@ -111,7 +109,11 @@ class Sidebar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              
+              <div>
+                <Route path = "/" component = {titleProfile} exact/>
+                <Route path = "/daftar" component = {titleDaftar}/>
+                <Route path = "/pengumuman" component = {titlePengumuman}/>
+              </div>
             </Typography>
           </Toolbar>
         </AppBar>
@@ -148,7 +150,11 @@ class Sidebar extends React.Component {
         </nav>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <FormDaftar/>
+              <div>
+                <Route path = "/" component = {Profile}  exact/>
+                <Route path = "/daftar" component = {FormDaftar}/>
+                <Route path = "/Pengumuman" component = {Pengumuman}/>
+              </div>
         </main>
       </div>
     );
