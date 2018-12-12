@@ -8,6 +8,7 @@ class Dashboard extends Component {
                 <table>
                     <tr>
                         <td>
+                            
                             <SimpleCard></SimpleCard>
                         </td>
                         <td>
