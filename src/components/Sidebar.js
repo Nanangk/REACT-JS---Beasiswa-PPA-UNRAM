@@ -16,6 +16,7 @@ import Profile from './Profile';
 import Pengumuman from './Pengumuman';
 import {BrowserRouter, Route} from 'react-router-dom';
 import SideBarNav from './SideBarNav';
+import Dashboard from './Dashboard';
 
 
 const titleProfile = () => {
@@ -101,7 +102,7 @@ class Sidebar extends React.Component {
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>
             <IconButton
-              color="primary"
+              color="secondary"
               aria-label="Open drawer"
               onClick={this.handleDrawerToggle}
               className={classes.menuButton}
@@ -155,6 +156,7 @@ class Sidebar extends React.Component {
                 <Route path = "/daftar" component = {FormDaftar}/>
                 <Route path = "/Pengumuman" component = {Pengumuman}/>
               </div>
+              {/* <Dashboard></Dashboard> */}
         </main>
       </div>
     );
