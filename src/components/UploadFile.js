@@ -15,30 +15,6 @@ import Typography from '@material-ui/core/Typography';
 class UploadFile extends React.Component{
     render(){
         return (
-<<<<<<< HEAD
-            <div>
-    
-                <Button variant="contained" color="default" className="uploadb" >
-                    <div className="upload">Upload</div>
-                    <CloudUploadIcon />
-                </Button>
-                
-                <Button variant="contained" color="default" className="uploadb">
-                    <div className="upload">Upload</div>
-                    <CloudUploadIcon />
-                </Button>
-                
-                <Button variant="contained" color="default" className="uploadb">
-                    <div className="upload">Upload</div>
-                    <CloudUploadIcon />
-                </Button>
-                
-                <Button variant="contained" color="default">
-                    <div className="upload">Upload</div>
-                    <CloudUploadIcon />
-                </Button>
-                
-=======
             <div>   
                <Typography variant="h6" color="inherit" noWrap>
                     Upload Kelengkapan Berkas :
@@ -81,7 +57,6 @@ class UploadFile extends React.Component{
                         <CloudUploadIcon />
                     </Button>
                 </div>  
->>>>>>> 37cbc0e9c9e1561008a3e9d3fb32821e7deb574e
             </div>
         )
     }

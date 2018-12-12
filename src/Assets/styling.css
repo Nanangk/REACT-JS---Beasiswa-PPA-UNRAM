@@ -61,5 +61,14 @@ td{
 }
 
 .uploadb{
-    margin-left: 2em;
+    margin-top: 2em;
+}
+.foto{
+    height: 345px;
+    border : 1px solid black;
+    margin-left: 30%
+}
+.navMenu{
+    text-decoration: none;
+    color : grey;
 }
