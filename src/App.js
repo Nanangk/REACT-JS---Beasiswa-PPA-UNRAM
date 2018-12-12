@@ -23,11 +23,11 @@ class App extends Component {
     firebase.initializeApp(DB_CONFIG);
     if (cookie.load('access') !== undefined && cookie.load('role') === '1') {
       this.setState({role : 1})
-      swal("Hello!", "Selamat datang di e-SKKE!", "success");
+      swal("Hello!", "Selamat datang di beasiswa PPA online", "success");
     }
     if (cookie.load('access') !== undefined && cookie.load('role') === '2') {
       this.setState({role : 2})
-      swal("Hello!", "Selamat datang di e-SKKE!", "success");
+      swal("Hello!", "Selamat datang di beasiswa PPA online!", "success");
     }
   }
 
