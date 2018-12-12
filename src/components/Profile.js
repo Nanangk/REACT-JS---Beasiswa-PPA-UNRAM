@@ -13,7 +13,7 @@ class Profile extends React.Component{
     render(){
         return (
             <div>
-            <table>
+            <table className = "tablePofile">
                <tr>
                    <td>
                        <tr>

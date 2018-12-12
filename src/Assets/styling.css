@@ -37,11 +37,11 @@ a:hover{
   height: 50px;
 }
 
-table{
+.tablePofile{
     width: 100%;
 }
 
-td:nth-child(odd){
+/* td:nth-child(odd){
     width: 50%;
     font-weight: bold;
    
@@ -53,7 +53,7 @@ td:nth-child(even){
 
 td{
     height: 3em;
-}
+} */ */
 
 .upload{
     margin-right: 0.5em;
@@ -63,7 +63,7 @@ td{
     margin-top: 2em;
 }
 .foto{
-    height: 345px;
+    height: 300px;
     border : 1px solid black;
     margin-left: 30%
 }
@@ -78,4 +78,7 @@ td{
     font-family: sans-serif;
     text-align: center;
     font-size: 18px;
+}
+.dashTable > tr{
+    width: 100%;
 }
