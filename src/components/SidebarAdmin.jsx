@@ -19,6 +19,8 @@ import Pengumuman from './Pengumuman';
 import {BrowserRouter, Route} from 'react-router-dom';
 import SideBarNavAdmin from './SideBarNavAdmin';
 import Dashboard from './Dashboard';
+import Pendaftar from './Pendaftar';
+import Diterima from './Diterima';
 
 
 const titleDashboard = () => {
@@ -161,8 +163,8 @@ class SidebarAdmin extends React.Component {
           <div className={classes.toolbar} />
               <div>
                 <Route path = "/dashboard" component = {Dashboard}  exact/>
-                <Route path = "/pendaftar" component = {Dashboard}/>
-                <Route path = "/pebdaftarverif" component = {Dashboard}/>
+                <Route path = "/pendaftar" component = {Pendaftar}/>
+                <Route path = "/pendaftarverif" component = {Diterima}/>
               </div>
         </main>
       </div>
