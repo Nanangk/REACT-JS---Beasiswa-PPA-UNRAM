@@ -105,6 +105,7 @@ class Sidebar extends React.Component {
     );
 
     return (
+     
       <div className={classes.root}>
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
@@ -166,6 +167,7 @@ class Sidebar extends React.Component {
               </div>
         </main>
       </div>
+      
     );
   }
 }

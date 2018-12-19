@@ -12,16 +12,14 @@ import Unram from "../Assets/logo.png";
 import '../Assets/styling.css';
 
 const style = {
-    width : "750px",
-    height : "500px",
-    margin : " 100px auto",
-    border : "1px solid rgba(255,255,255,.5)",
-    position : "relative"
+    height:'753px'
+   
 };
 
 const logStyle ={
-    width : "200px",
-    height : "200px",
+    
+    width : "300px",
+    height : "300px",
     margin : '2em auto',
 }
 
@@ -170,12 +168,14 @@ class Login extends Component {
     return (
       <div>
           <div className="login" style={style}>
+           
+            <div className="kotaklogin">
             <img className='logo' src={Unram} alt=""/>
-            <h2>PENDAFTARAN BEASISWA PPA</h2>
-            <h2 style = {{marginTop : '0px'}}>Universitas Mataram</h2>
+            <h3>PENDAFTARAN BEASISWA PPA</h3>
+            <h3 style = {{marginTop : '0px'}}>Universitas Mataram</h3>
             <div style={logStyle}>
                 {/* <form onSubmit={this.handleSubmit}>        */}
-                    <TextField                    
+                    <TextField className="kotak"                    
                     d="outlined-dense"
                     label="NIM"
                     margin="normal"
@@ -184,7 +184,7 @@ class Login extends Component {
                     onChange={this.handleChangeNIM}
                     />
                     <br></br>
-                    <TextField
+                    <TextField className="kotak"
                     id="outlined-dense"
                     label="Password"
                     type="password"
@@ -195,13 +195,18 @@ class Login extends Component {
 
                     />
                     <br></br>
-                    <Button onClick={this.handleSubmit} variant="contained" color="secondary" type="submit">
+                    <br></br>
+                    <div className="tombol">
+                    <Button onClick={this.handleSubmit}  type="submit">
                         Login
                     </Button>
+                    </div>
                 {/* </form> */}
                 <div className="lupa">
                   <a href="">Lupa password?</a>
+                  
                 </div>
+            </div>
             </div>
           </div>
       </div>

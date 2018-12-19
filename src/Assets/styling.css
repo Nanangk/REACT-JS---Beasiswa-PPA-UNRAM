@@ -1,16 +1,53 @@
 .login{
-    background-image: url(login-bg.jpg)
+    background: url(aa.JPG)no-repeat center center fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
-h2{
-    margin-top: 130px;
+
+.kotaklogin{
+    background-color: white;
+    height: 65%;
+    width: 23%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -220px;
+	margin-left: -180px;
+    
+}
+
+.kotak{
+    width: 100%;
+    
+}
+h3{
+    margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-    color: white;
+    color: black;
 }
 .logo{
-    position: absolute;
-    top :0.5em;
-    left:320px;
+    margin-top: 20px;
+   align-self: center;
+   margin-left: 120px;
+  
+}
+.tombol{
+    background:rgb(49, 96, 226);
+	border: none;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	font-size: 15px;
+    text-align: center;
+    
+}
+.tombol:hover{
+    cursor: pointer;
+	background:blue;
+	color:#000;
 }
 .lupa > a{
     color:darkblue;
@@ -20,6 +57,8 @@ h2{
 a:hover{
     color:blue;
 }
+
+
 
 .judul{
     position: absolute;
@@ -90,4 +129,8 @@ td{
 
 .diterima {
     width: 80%;
+}
+
+.sidebar{
+    background: url(../Assets/aa.JPG);
 }
