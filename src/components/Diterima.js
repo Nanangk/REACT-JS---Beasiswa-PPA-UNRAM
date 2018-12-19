@@ -35,17 +35,15 @@ const styles = theme => ({
 });
 
 let id = 0;
-function createData(no, nama, nim, fakultas, sbea, skul, sgaji,aksi) {
+function createData(nama, nim, fakultas, sbea, skul, sgaji,kk,krs,aksi) {
   id += 1;
-  return { id, no, nama, nim, fakultas, sbea,skul,sgaji,aksi };
+  return { id,nama, nim, fakultas, sbea,skul,sgaji,kk,krs,aksi };
 }
 
 const rows = [
-  createData(1,'Nanang Kasim', 'F1D016063','Teknik Informatika','Ada','ada','ada','terima/tidak'),
-  createData(2,'Mustiari', 'F1D016061','Teknik Informatika','Ada','ada','ada','terima/tidak'),
-  createData(3,'Patriaji', 'F1D016075','Teknik Informatika','Ada','ada','ada','terima/tidak'),
-  createData(4,'Mega Laely', 'F1D016054','Teknik Informatika','Ada','ada','ada','terima/tidak'),
-  createData(5,'Abd. Haris kurusnadi', 'F1D016010','Teknik Informatika','Tidak Ada','ada','ada','terima/tidak'),
+  createData('Nanang Kasim', 'F1D016063','Teknik Informatika','Ada','ada','ada','ada','ada','terima/tidak'),
+  createData('Mustiari', 'F1D016061','Teknik Informatika','Ada','ada','ada','ada','ada','terima/tidak'),
+ 
 ];
 
 
@@ -60,13 +58,15 @@ export default class Pendaftar extends React.Component {
       <Table className={Pendaftar}>
         <TableHead>
           <TableRow>
-            <CustomTableCell align="right">No</CustomTableCell>
-            <CustomTableCell align="right">Nama</CustomTableCell>
+           
             <CustomTableCell align="right">NIM</CustomTableCell>
+            <CustomTableCell align="right">Nama</CustomTableCell>
             <CustomTableCell align="right">Fakultas/Prodi</CustomTableCell>
             <CustomTableCell align="right">Surat Beasiswa</CustomTableCell>
             <CustomTableCell align="right">Aktif kuliah</CustomTableCell>
             <CustomTableCell align="right">Slip Gaji</CustomTableCell>
+            <CustomTableCell align="right">KK</CustomTableCell>
+            <CustomTableCell align="right">KRS/KHS</CustomTableCell>
             <CustomTableCell align="right">Tindakan</CustomTableCell>
           </TableRow>
         </TableHead>
@@ -75,13 +75,15 @@ export default class Pendaftar extends React.Component {
             return (
               <TableRow >
                 
-                <CustomTableCell align="right">{row.no}</CustomTableCell>
-                <CustomTableCell align="right">{row.nama}</CustomTableCell>
+               
                 <CustomTableCell align="right">{row.nim}</CustomTableCell>
+                <CustomTableCell align="right">{row.nama}</CustomTableCell>
                 <CustomTableCell align="right">{row.fakultas}</CustomTableCell>
                 <CustomTableCell align="right">{row.sbea}</CustomTableCell>
                 <CustomTableCell align="right">{row.skul}</CustomTableCell>
                 <CustomTableCell align="right">{row.sgaji}</CustomTableCell>
+                <CustomTableCell align="right">{row.kk}</CustomTableCell>
+                <CustomTableCell align="right">{row.krs}</CustomTableCell>
                 <CustomTableCell align="right">{row.aksi}</CustomTableCell>
               </TableRow>
             );
