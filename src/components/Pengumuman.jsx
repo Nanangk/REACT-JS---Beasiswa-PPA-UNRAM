@@ -9,7 +9,7 @@ class Pengumuman extends React.Component{
                     Informasi Pendaftaran Beasiswa PPA
                 </Typography>
                 <Typography variant="h9" color="inherit">
-                Pengumuman Masih belum dibuka
+                Pusat informasi tentang beasiswa PPA, tunggu saja
                 <div>
                 
                 </div>
