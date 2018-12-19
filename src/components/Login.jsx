@@ -119,7 +119,7 @@ class Login extends Component {
         } else if (this.state.username.slice(0,2) !== 'F1') {
             const todosRef = databaseRef.child("user").child(this.state.username);
             todosRef.on('value', snap => {
-                console.log(snap.val().password)
+               // console.log(snap.val().password)
                 if (snap.exists() !== false) {
                     if (snap.val().password === this.state.password) {
                         cookie.save('user_id', this.state.username, {

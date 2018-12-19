@@ -57,7 +57,7 @@ export default class Pendaftar extends React.Component {
        
       <Table className={Pendaftar}>
         <TableHead>
-          <TableRow>
+          <TableRow className="headtabel">
            
             <CustomTableCell align="right">NIM</CustomTableCell>
             <CustomTableCell align="right">Nama</CustomTableCell>
