@@ -245,32 +245,27 @@ class UploadFile extends React.Component{
                     <div>
                         1. Keterangan Tidak Menerima Beasiswa
                     </div> 
-                         <input type="file" name='file1' onChange={(event)=>this.file1(event)} className="form-control"/>
-                   
+                        <input type="file" name='file1' onChange={(event)=>this.file1(event)} className="form-control"/>
                     <div>
+                        <br></br>
                         2. Keterangan Aktif Kuliah
                     </div> 
-                    <div className="uploadb">
                          <input type="file" name='file2' onChange={(event)=>this.file2(event)} className="form-control"/>
-                    </div>
                     <div>
+                    <br></br>
                         3. Slip Gaji Orang Tua
                     </div> 
-                    <div className="uploadb">
                          <input type="file" name='file3' onChange={(event)=>this.file3(event)} className="form-control"/>
-                    </div>
                     <div>
+                    <br></br>
                         4. Kartu keluarga
                     </div>
-                    <div className="uploadb">
                          <input type="file" name='file4' onChange={(event)=>this.file4(event)} className="form-control"/>
-                    </div>
                     <div>
+                    <br></br>
                         5. KRS/KHS/Transkrip Nilai
                     </div>
-                    <div className="uploadb">
-                         <input type="file" name='file5' onChange={(event)=>this.file5(event)} className="form-control"/>
-                    </div>  
+                         <input type="file" name='file5' onChange={(event)=>this.file5(event)} className="form-control"/> 
               </Typography>
                
                
