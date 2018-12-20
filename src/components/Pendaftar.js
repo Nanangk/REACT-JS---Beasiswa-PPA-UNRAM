@@ -35,14 +35,14 @@ const styles = theme => ({
 });
 
 let id = 0;
-function createData(nama, nim, fakultas, sbea, skul, sgaji,kk,krs,aksi) {
+function createData(nama, nim, fakultas, sbea, skul, sgaji,kk,krs) {
   id += 1;
-  return { id,nama, nim, fakultas, sbea,skul,sgaji,kk,krs,aksi };
+  return { id,nama, nim, fakultas, sbea,skul,sgaji,kk,krs };
 }
 
 const rows = [
-  createData('Nanang Kasim', 'F1D016063','Teknik Informatika','Ada','ada','ada','ada','ada','terima/tidak'),
-  createData('Mustiari', 'F1D016061','Teknik Informatika','Ada','ada','ada','ada','ada','terima/tidak'),
+  createData('Nanang Kasim', 'F1D016063','Teknik Informatika','Ada','ada','ada','ada','ada'),
+  createData('Mustiari', 'F1D016061','Teknik Informatika','Ada','ada','ada','ada','ada'),
  
 ];
 
@@ -84,7 +84,8 @@ export default class Pendaftar extends React.Component {
                 <CustomTableCell align="right">{row.sgaji}</CustomTableCell>
                 <CustomTableCell align="right">{row.kk}</CustomTableCell>
                 <CustomTableCell align="right">{row.krs}</CustomTableCell>
-                <CustomTableCell align="right">{row.aksi}</CustomTableCell>
+                <CustomTableCell align="right"><button> terima</button></CustomTableCell>
+                <CustomTableCell align="right"><button> Tolak</button></CustomTableCell>
               </TableRow>
             );
           })}
