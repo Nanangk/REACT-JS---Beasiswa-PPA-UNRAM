@@ -237,7 +237,7 @@ class UploadFile extends React.Component{
 
     render(){
         return (
-            <div>   
+            <div className="formdaftar">   
                <Typography variant="h6" color="inherit" noWrap>
                     Upload Kelengkapan Berkas :
               </Typography>

@@ -79,6 +79,7 @@ a:hover{
 
 .tablePofile{
     width: 100%;
+    background-color: white;
 }
 
 /* td:nth-child(odd){
@@ -138,6 +139,9 @@ td{
 
 .headtabel{
     color:"blue";
+}
+.formdaftar{
+    background-color: white;
 }
 
 
