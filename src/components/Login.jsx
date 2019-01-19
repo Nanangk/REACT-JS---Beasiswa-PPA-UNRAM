@@ -71,14 +71,14 @@ class Login extends Component {
                         swal("Oops!", "Password salah!", "error");
                     }
                 } else {
-                    axios.post('https://app-1527612087.000webhostapp.com/api_sia/?nim=' + this.state.username)
+                    axios.post('https://if.unram.ac.id/apps/e-skke/api_sia/Mahasiswa.php?nim=' + this.state.username)
                         .then(function (response) {
                             if (response.data !== 'kosong') {
                                 console.log(response.data);
-                                cookie.save('user_id', response.data.student.NIM, {
+                                cookie.save('user_id', response.data.NIM, {
                                     path: '/'
                                 })
-                                cookie.save('access', response.data.student.NIM, {
+                                cookie.save('access', response.data.NIM, {
                                     path: '/'
                                 })
                                 cookie.save('role', 1, {
@@ -86,15 +86,15 @@ class Login extends Component {
                                 })
                                 setTimeout(() => {
                                     todosRef.set({
-                                        foto: response.data.student.foto,
-                                        jurusan: response.data.student.kode_prodi,
-                                        password: response.data.student.NIM,
-                                        nama: response.data.student.nama,
-                                        tgl_lahir: response.data.student.tgl_lahir,
-                                        jns_kelamin: response.data.student.jns_kelamin,
-                                        email: response.data.student.email,
-                                        no_hp: response.data.student.no_hp,
-                                        kode_agama: response.data.student.kode_agama,
+                                        foto: response.data.foto,
+                                        kode_prodi: response.data.kode_prodi,
+                                        password: response.data.NIM,
+                                        nama: response.data.nama,
+                                       // tgl_lahir: response.data.tgl_lahir,
+                                        jns_kelamin: response.data.jns_kelamin,
+                                      //  email: response.data.email,
+                                      //  no_hp: response.data.no_hp,
+                                        //kode_agama: response.data.kode_agama,
 
                                     });
                                 }, 0);

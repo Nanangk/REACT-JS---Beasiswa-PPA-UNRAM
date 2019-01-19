@@ -20,7 +20,7 @@ class Profile extends React.Component{
         this.state ={
             nama    :'',
             nim     :'',
-            jurusan :'',
+            kode_prodi :'',
             tgl_lahir :'',
             jns_kelamin : '',
             email   :'',
@@ -35,22 +35,21 @@ class Profile extends React.Component{
         const getNim = cookie.load('access')
         const databaseRef = firebase.database().ref();
         const todosRef = databaseRef.child("user").child(getNim);
-        todosRef.on('value', snap => {
+        todosRef.on('value', snap => { 
+            
             var jurusannya = '';
-            if (snap.val().jurusan === '552011') {jurusannya = 'Teknik Informatika';}
-            else if (snap.val().jurusan === '222011') {jurusannya = 'Teknik Sipil';}
-            else if (snap.val().jurusan === '202011') {jurusannya = 'Teknik Elektro';}
-            else if (snap.val().jurusan === '212011') {jurusannya = 'Teknik Mesin';}
+            if (snap.val().kode_prodi === '552011') {jurusannya = 'Teknik Informatika';}
+            else if (snap.val().kode_prodi === '222011') {jurusannya = 'Teknik Sipil';}
+            else if (snap.val().kode_prodi === '202011') {jurusannya = 'Teknik Elektro';}
+            else if (snap.val().kode_prodi === '212011') {jurusannya = 'Teknik Mesin';}
 
-            var agama = '';
-            if (snap.val().kode_agama === '1') {agama = 'Islam';}
-            else if (snap.val().kode_agama === '2') {agama = 'Hindu';}
+         
 
             if (snap.exists() !== false){
                 self.setState({
                     nama    : snap.val().nama,
                     nim     : cookie.load('user_id'),
-                    jurusan : jurusannya,
+                    kode_prodi : jurusannya,
                     foto    : snap.val().foto,
                     email   : snap.val().email,
                     no_hp   : snap.val().no_hp,
@@ -85,7 +84,7 @@ class Profile extends React.Component{
                        <tr>
                            <td>Fakultas/Jurusan</td>
                            <td>
-                           <Input value={this.state.jurusan} style={{width: 300}}/>
+                           <Input value={this.state.kode_prodi} style={{width: 300}}/>
                            </td>
                        </tr>
                        <tr>
