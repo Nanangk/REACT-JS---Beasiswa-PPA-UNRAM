@@ -217,7 +217,9 @@ class UploadFile extends React.Component{
         console.log(this.state.url5);
         const databaseRef = firebase.database().ref();
         const todosRef = databaseRef.child("pendaftaran").child(cookie.load('user_id'));
-
+        if ((this.state.url1==='') || (this.state.url2==='') || (this.state.url3==='') || (this.state.url4==='') || (this.state.url5==='')){
+            swal("Oops!", "Ada Data yang Belum Di Input!", "error");
+        }else{
         todosRef.set({
            file1:this.state.url1,
            file2:this.state.url2,
@@ -228,10 +230,12 @@ class UploadFile extends React.Component{
 
         });
         setTimeout(() => {
+            
             swal("Success! Anda berhasil mendaftar!", {
                 icon: "success",
             });
           }, 3000)
+        }
        
     }
 
