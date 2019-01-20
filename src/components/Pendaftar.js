@@ -25,7 +25,6 @@ export default class Pendaftar extends React.Component {
            file3 : [],
            file4 : [],
            file5 : [],
-            berkas1:'',
            table : ''
         };
        }
