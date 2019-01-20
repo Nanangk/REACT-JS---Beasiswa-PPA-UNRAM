@@ -153,7 +153,7 @@ td{
     border:10px solid #fff;
     }
     .zebra-table th,.zebra-table td{
-    vertical-align: top;
+    vertical-align: center;
     padding:10px 7px;
     text-align: left;
     margin:0;
@@ -190,7 +190,11 @@ td{
     /* Make row highlighted */
 
     .pdficon{
-        width: 50px;
+        width: 40px;
+    }
+
+    .accicon{
+        width: 90px;
     }
     
 
