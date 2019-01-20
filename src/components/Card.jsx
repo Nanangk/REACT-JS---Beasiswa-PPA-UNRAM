@@ -30,7 +30,7 @@ function CardVerif(props) {
 
   return (
     <Card className={classes.card} >
-      <CardContent >
+      <CardContent className="card">
         <Typography variant="h5" component="h2">
         Total Pendaftar 
         </Typography>
@@ -44,9 +44,7 @@ function CardVerif(props) {
           Mahasiswa yang telah menginput berkas-berkas yang diperlukan
         </Typography>
       </CardContent>
-      <CardActions>
-       
-      </CardActions>
+     
     </Card>
   );
 }

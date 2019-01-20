@@ -196,6 +196,14 @@ td{
     .accicon{
         width: 100px;
     }
+
+    .cardverif{
+        background-color: rgb(189, 252, 228);
+    }
+    .card{
+        background-color: rgb(189, 222, 253);
+       
+    }
     
 
 

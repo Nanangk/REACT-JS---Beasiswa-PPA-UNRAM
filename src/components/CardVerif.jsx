@@ -30,7 +30,7 @@ function CardVerif(props) {
 
   return (
     <Card className={classes.card}>
-      <CardContent >
+      <CardContent className="cardverif">
         <Typography variant="h5" component="h2">
         Pendaftar Diterima
         </Typography>
@@ -45,9 +45,7 @@ function CardVerif(props) {
           sebagai Penerima Beasiswa PPA
         </Typography>
       </CardContent>
-      <CardActions>
-       
-      </CardActions>
+      
     </Card>
   );
 }

@@ -12,6 +12,7 @@ import pdf from '../Assets/pdf.png';
 import accept from '../Assets/acc.png';
 import swal from 'sweetalert';
 import cookie from 'react-cookies';
+import Dashboard from './Dashboard';
   
 export default class Pendaftar extends React.Component {
 
@@ -96,6 +97,8 @@ export default class Pendaftar extends React.Component {
    
     return (
       <div>
+          <Dashboard/>
+          <br></br> <br></br>
       <table className = "zebra-table">
       <thead>
           <tr>

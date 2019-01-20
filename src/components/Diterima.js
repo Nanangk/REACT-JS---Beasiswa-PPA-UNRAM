@@ -12,6 +12,8 @@ import pdf from '../Assets/pdf.png';
 import accept from '../Assets/cancel.png';
 import swal from 'sweetalert';
 import cookie from 'react-cookies';
+import SimpleCard from "./Card";
+import CardVerif from "./CardVerif";
   
 export default class Pendaftar extends React.Component {
 
@@ -84,7 +86,28 @@ export default class Pendaftar extends React.Component {
   render(){
    
     return (
+      
+
+      
       <div>
+        <table>
+          <tr>
+              <td>
+                  
+                  <SimpleCard></SimpleCard>
+              </td>
+              <td></td>
+              <td>
+                  <t></t>
+              </td>
+              <td></td>
+              <td>
+                  <CardVerif></CardVerif>
+              </td>
+          </tr>
+      </table>
+      <br></br> <br></br> 
+
       <table className = "zebra-table">
       <thead>
           <tr>

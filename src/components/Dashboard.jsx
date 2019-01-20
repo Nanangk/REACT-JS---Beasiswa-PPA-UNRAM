@@ -11,6 +11,11 @@ class Dashboard extends Component {
                             
                             <SimpleCard></SimpleCard>
                         </td>
+                        <td></td>
+                        <td>
+                            <t></t>
+                        </td>
+                        <td></td>
                         <td>
                             <CardVerif></CardVerif>
                         </td>

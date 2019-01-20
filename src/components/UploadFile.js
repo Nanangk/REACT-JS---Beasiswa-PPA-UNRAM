@@ -294,12 +294,14 @@ class UploadFile extends React.Component{
                            </td>
                        </tr>
                        <tr align="center" >
-                      
+                        
                        <div className="uploadb">
                              <Button onClick={this.submit} variant="contained" color="secondary">
                                 <div className="upload">  {this.state.loading ? "Submiting..." : "Submit"}</div>
                                 <CloudUploadIcon />
                             </Button>
+                            <br></br>
+                            <br></br>
                     </div>
                    
                     </tr>
