@@ -39,6 +39,19 @@ export default class Pendaftar extends React.Component {
           <td>tombol</td>
 
           </tr>
+
+          <tr>
+          <td>2</td>
+          <td>F1D016061</td>
+          <td>Mustiari</td>
+          <td>Teknik Informatika</td>
+          <td>ada</td>
+          <td>ada</td>
+          <td>ada</td>
+          <td>ada</td>
+          <td>tombol</td>
+
+          </tr>
          
        </tbody>
         

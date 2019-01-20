@@ -66,38 +66,46 @@ class Profile extends React.Component{
     render(){
         return (
             <div>
-            <table className = "tablePofile">
-               <tr>
-                   <td>
+            <table className = "highlighted-row">
+             <thead>
+                <tr>
+                <th>Data Mahasiswa</th>
+              
+                </tr>
+            </thead>
+            <tbody>
+              
+                  
                        <tr>
                            <td>Nama</td>
                            <td> 
-                               <Input value={this.state.nama} style={{width: 300}}/>
+                             : {this.state.nama}
                            </td>
                        </tr>
                        <tr>
                            <td>NIM</td>
                            <td>
-                           <Input value={this.state.nim} style={{width: 300}}/>
+                          : {this.state.nim} 
                            </td>
                        </tr>
                        <tr>
                            <td>Fakultas/Jurusan</td>
                            <td>
-                           <Input value={this.state.kode_prodi} style={{width: 300}}/>
+                           : {this.state.kode_prodi}
                            </td>
                        </tr>
                       
                        <tr>
                            <td>Jenis Kelamin</td>
                            <td>
-                               <Input value={this.state.jns_kelamin} style={{width: 300}}/>
+                              : {this.state.jns_kelamin} 
                            </td>
                        </tr>
                      
-                   </td>
+                
                   
-               </tr>
+               
+               </tbody>
             </table>
        </div>
         )

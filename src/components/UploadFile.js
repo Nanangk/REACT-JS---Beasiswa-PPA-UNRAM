@@ -237,46 +237,68 @@ class UploadFile extends React.Component{
 
     render(){
         return (
-            <div className="formdaftar">   
-               <Typography variant="h6" color="inherit" noWrap>
-                    Upload Kelengkapan Berkas :
-              </Typography>
-              <Typography variant="h7" color="inherit" noWrap>
-                    <div>
-                        1. Keterangan Tidak Menerima Beasiswa
-                    </div> 
-                        
-                        <input type="file" name='file1' onChange={(event)=>this.file1(event)} className="form-control"/>
-                    <div>
-                        <br></br>
-                        2. Keterangan Aktif Kuliah
-                    </div> 
-                         <input type="file" name='file2' onChange={(event)=>this.file2(event)} className="form-control"/>
-                    <div>
-                    <br></br>
-                        3. Slip Gaji Orang Tua
-                    </div> 
-                         <input type="file" name='file3' onChange={(event)=>this.file3(event)} className="form-control"/>
-                    <div>
-                    <br></br>
-                        4. Kartu keluarga
+           
+                <table className = "highlighted-row">
+                     <thead>
+                        <tr>
+                        <th>Upload Kelengkapan Berkas (pdf)</th>
+                    
+                        </tr>
+                </thead>
+                <tbody>
+                
+                  
+                       <tr>
+                           <td> 1. Keterangan Tidak Menerima Beasiswa</td>
+                           <td> 
+                              <input type="file" name='file1' onChange={(event)=>this.file1(event)} className="form-control"/>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td> 2. Keterangan Aktif Kuliah </td>
+                           <td>
+                          <input type="file" name='file2' onChange={(event)=>this.file2(event)} className="form-control"/>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td> 3. Slip Gaji Orang Tua</td>
+                           <td>
+                           <input type="file" name='file3' onChange={(event)=>this.file3(event)} className="form-control"/>
+                           </td>
+                       </tr>
+                      
+                       <tr>
+                           <td> 4. Kartu keluarga</td>
+                           <td>
+                              <input type="file" name='file4' onChange={(event)=>this.file4(event)} className="form-control"/>
+                           </td>
+                       </tr>
+
+                       
+                       <tr>
+                           <td>  5. KRS/KHS/Transkrip Nilai</td>
+                           <td>
+                              <input type="file" name='file5' onChange={(event)=>this.file5(event)} className="form-control"/>
+                           </td>
+                       </tr>
+                       <tr align="center" >
+                      
+                       <div className="uploadb">
+                             <Button onClick={this.submit} variant="contained" color="secondary">
+                                <div className="upload">  {this.state.loading ? "Submiting..." : "Submit"}</div>
+                                <CloudUploadIcon />
+                            </Button>
                     </div>
-                         <input type="file" name='file4' onChange={(event)=>this.file4(event)} className="form-control"/>
-                    <div>
-                    <br></br>
-                        5. KRS/KHS/Transkrip Nilai
-                    </div>
-                         <input type="file" name='file5' onChange={(event)=>this.file5(event)} className="form-control"/> 
-              </Typography>
+                   
+                    </tr>
+                       
+                     
+                
+                  
                
+               </tbody>
+            </table>
                
-                <div className="uploadb">
-                    <Button onClick={this.submit} variant="contained" color="secondary">
-                        <div className="upload">Submit</div>
-                        <CloudUploadIcon />
-                    </Button>
-                </div>
-            </div>
         )
     }
    

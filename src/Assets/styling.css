@@ -160,6 +160,37 @@ td{
     .zebra-table tbody tr:nth-child(odd) { /* Make table like zebra */
     background:#eee;
     }/* End CSS for Zebra Table in index.html */
+.zebra-table tr:hover td{
+    background: #d0dafd;
+    color: #339;
+}
+
+
+
+.highlighted-row {
+    width: 70%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px 1px rgb(208, 218, 248);
+    overflow: hidden;
+    border:10px solid #fff;
+    background-color: #fff;
+    }
+    .highlighted-row th,.highlighted-row td{
+    vertical-align: top;
+    padding:10px 7px;
+    text-align: left;
+    margin:0;
+    }
+
+    .highlighted-row tr:hover td{
+        background: #e8f6f7;
+        color: #339;
+    }
+    /* Make row highlighted */
+    
+
+
+
 
 
 

@@ -8,6 +8,7 @@ class FormDaftar extends React.Component{
         return (
             <div>
                 <Profile/>
+                <br></br>
                 <Divider color = "secondary" ></Divider>
                 <UploadFile/>
 

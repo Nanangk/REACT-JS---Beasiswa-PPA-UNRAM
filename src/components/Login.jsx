@@ -196,9 +196,10 @@ class Login extends Component {
                     />
                     <br></br>
                     <br></br>
+                    
                     <div className="tombol">
-                    <Button onClick={this.handleSubmit}  type="submit">
-                        Login
+                    <Button onClick={this.handleSubmit}  type="submit" >
+                    {this.state.loading ? "Loading..." : "Login"}
                     </Button>
                     </div>
                 {/* </form> */}
