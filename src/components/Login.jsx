@@ -204,7 +204,7 @@ class Login extends Component {
                     </div>
                 {/* </form> */}
                 <div className="lupa">
-                  <a href="">Lupa password?</a>
+                  <a href="https://pesan.link/forgetPassword">Lupa password?</a>
                   
                 </div>
             </div>
