@@ -44,6 +44,10 @@ class UploadFile extends React.Component{
             statusfile5:false,
             url5:'',
 
+            NIM:'',
+            NAMA:'',
+            PRODI:'',
+
         }
     
         this.file1 = this.file1.bind(this)
@@ -218,7 +222,7 @@ class UploadFile extends React.Component{
         const databaseRef = firebase.database().ref();
         const todosRef = databaseRef.child("pendaftaran").child(cookie.load('user_id'));
         if ((this.state.url1==='') || (this.state.url2==='') || (this.state.url3==='') || (this.state.url4==='') || (this.state.url5==='')){
-            swal("Oops!", "Ada Data yang Belum Di Input!", "error");
+            swal("Oops!", "Ada Berkas yang Belum Di Input!", "error");
         }else{
         todosRef.set({
            file1:this.state.url1,
@@ -226,6 +230,10 @@ class UploadFile extends React.Component{
            file3:this.state.url3,
            file4:this.state.url4,
            file5:this.state.url5,
+           NIM:cookie.load('user_id'),
+           
+          
+          
            
 
         });
