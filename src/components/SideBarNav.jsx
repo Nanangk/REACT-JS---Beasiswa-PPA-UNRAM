@@ -10,6 +10,7 @@ import {NavLink} from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import cookie from 'react-cookies';
+import swal from 'sweetalert';
 
 const button = {
   profile : 'Profile',
@@ -24,13 +25,24 @@ class SideBarNav extends Component {
         nama    :'',
         nim     :''
     }
-    this.logout = this.logout.bind(this)
+    // this.logout = this.logout.bind(this)
 }
-logout(){
-  cookie.remove('role')
-  cookie.remove('user_id')
-  cookie.remove('access')
-  window.location="/"
+handleLogout= () =>{
+  swal({
+      title: "Anda ingin logout?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+          cookie.remove('user_id')
+          cookie.remove('access')
+          cookie.remove('role')
+          window.location = "/";
+      } else {
+        }
+    });
 }
   render() {
     return (
@@ -62,11 +74,11 @@ logout(){
         {/* LogoutNav */}
         <Divider />
         <List>
-           <NavLink className='navMenu' to='/'>
-              <ListItem button key={button.profile} onClick={this.logout}>
+          
+              <ListItem button key={button.profile} onClick={this.handleLogout}>
               <MailIcon/><span style={{marginLeft : '2em'}}>Log Out</span>
               </ListItem>
-            </NavLink>
+          
             
         </List>
         <Divider />

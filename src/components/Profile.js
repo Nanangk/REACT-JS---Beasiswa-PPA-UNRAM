@@ -87,34 +87,16 @@ class Profile extends React.Component{
                            <Input value={this.state.kode_prodi} style={{width: 300}}/>
                            </td>
                        </tr>
-                       <tr>
-                           <td>Tanggal Lahir</td>
-                           <td>
-                               <Input value={this.state.tgl_lahir} style={{width: 300}}/>
-                           </td>
-                       </tr>
+                      
                        <tr>
                            <td>Jenis Kelamin</td>
                            <td>
                                <Input value={this.state.jns_kelamin} style={{width: 300}}/>
                            </td>
                        </tr>
-                       <tr>
-                           <td>No. Hp</td>
-                           <td>
-                               <Input value={this.state.no_hp} style={{width: 300}}/>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>Email</td>
-                           <td>
-                               <Input value={this.state.email} style={{width: 300}}/>
-                           </td>
-                       </tr>
+                     
                    </td>
-                   <td>
-                       <img className="foto" src = {this.state.foto}></img>
-                   </td>
+                  
                </tr>
             </table>
        </div>
