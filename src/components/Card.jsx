@@ -32,17 +32,20 @@ function CardVerif(props) {
     <Card className={classes.card} >
       <CardContent >
         <Typography variant="h5" component="h2">
-        Pendaftar Diterima
+        Total Pendaftar 
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           Jumlah
         </Typography>
         <Typography variant="h4">
-          80
+          4
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          Mahasiswa yang telah menginput berkas-berkas yang diperlukan
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Lihat Daftar</Button>
+       
       </CardActions>
     </Card>
   );

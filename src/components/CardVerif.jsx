@@ -38,11 +38,15 @@ function CardVerif(props) {
           Jumlah
         </Typography>
         <Typography variant="h4">
-          80
+          2
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          Mahasiswa yang telah Diterima 
+          sebagai Penerima Beasiswa PPA
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Lihat Daftar</Button>
+       
       </CardActions>
     </Card>
   );
