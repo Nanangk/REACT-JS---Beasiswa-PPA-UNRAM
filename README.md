@@ -1,1 +1,1 @@
-My Firsth REACT JS Project
+My First REACT JS Project
